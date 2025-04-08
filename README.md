@@ -7,11 +7,6 @@ graph TD
         BackendWS[Backend WebSocket Server]
     end
 
-    subgraph "Application Layer: Presentation"
-        direction TB
-        UI[UI (Activity / Compose Screen)] --> VM{ViewModel};
-    end
-
     subgraph "Core Chat Library: Domain"
         direction TB
         subgraph "Use Cases"
